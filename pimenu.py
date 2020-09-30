@@ -1,10 +1,10 @@
 #!/usr/bin/python2
 # -*- coding: utf-8 -*-
-import Tkconstants as TkC
+import tkinter.constants as TkC
 import os
 import subprocess
 import sys
-from Tkinter import Tk, Frame, Button, Label, PhotoImage
+from tkinter import Tk, Frame, Button, Label, PhotoImage
 from math import sqrt, floor, ceil
 from subprocess import Popen
 import psutil
@@ -59,7 +59,7 @@ class PiMenu(Frame):
 
         :return: None
         """
-	subprocess.call(self.path + "/BruyerewifiagreeCurl.sh")
+        subprocess.call(self.path + "/BruyerewifiagreeCurl.sh")
         with open(self.path + '/pimenu.yaml', 'r') as f:
             doc = yaml.load(f)
         self.lastinit = os.path.getmtime(self.path + '/pimenu.yaml')
@@ -215,7 +215,7 @@ class PiMenu(Frame):
         :return:
         """
         # hide the menu and show a delay screen
-	print(actions)
+        print(actions)
         self.hide_top()
         delay = Frame(self, bg="#2d89ef")
         delay.pack(fill=TkC.BOTH, expand=1)
@@ -224,128 +224,128 @@ class PiMenu(Frame):
         self.parent.update()
 
         # excute shell script
-	if (actions[len(actions)-1] == "exit"):
-		sys.exit()
-	elif (actions[len(actions)-2] == "email"):
-		if (not checkIfProcessRunning("mutt")):
-        		subprocess.call([self.path + '/pimenu.sh'] + ["social", "email"])
-	elif (actions[len(actions)-2] == "music"):
-                subprocess.call([self.path + '/pimenu.sh'] + ["social", "music"])
-	elif (actions[len(actions)-2] == "video"):
-		subprocess.call([self.path + '/pimenu.sh'] + ["social", "video"])
-	elif (actions[len(actions)-2] == "internet"):
-		subprocess.call([self.path + '/pimenu.sh'] + ["social", "internet"])
-	else:
-		subprocess.call([self.path + '/pimenu.sh'] + actions)
+        if (actions[len(actions)-1] == "exit"):
+            sys.exit()
+        elif (actions[len(actions)-2] == "email"):
+            if (not checkIfProcessRunning("mutt")):
+                subprocess.call([self.path + '/pimenu.sh'] + ["social", "email"])
+        elif (actions[len(actions)-2] == "music"):
+            subprocess.call([self.path + '/pimenu.sh'] + ["social", "music"])
+        elif (actions[len(actions)-2] == "video"):
+            subprocess.call([self.path + '/pimenu.sh'] + ["social", "video"])
+        elif (actions[len(actions)-2] == "internet"):
+            subprocess.call([self.path + '/pimenu.sh'] + ["social", "internet"])
+        else:
+            subprocess.call([self.path + '/pimenu.sh'] + actions)
 		
         # remove delay screen and show menu again
         delay.destroy()
-	if (actions[len(actions)-2] == "email"):
-		time.sleep(2)
-		if (actions[len(actions)-1] == "quit"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing quit"
-			keyboard.press("q")
-			keyboard.release("q")
-		elif (actions[len(actions)-1] == "save"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing save"
-			keyboard.press("s")
-			keyboard.release("s")
-		elif (actions[len(actions)-1] == "delete"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing delete"
-			keyboard.press("d")
-			keyboard.release("d")
-		elif (actions[len(actions)-1] == "mail"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing mail"
-			keyboard.press("m")
-			keyboard.release("m")
-		elif (actions[len(actions)-1] == "undelete"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing undelete"
-			keyboard.press("u")
-			keyboard.release("u")
-		elif (actions[len(actions)-1] == "reply"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing reply"
-			keyboard.press("r")
-			keyboard.release("r")
-		elif (actions[len(actions)-1] == "group"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing group"
-			keyboard.press("g")
-			keyboard.release("g")
-		elif (actions[len(actions)-1] == "help"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing help"
-			keyboard.press("h")
-			keyboard.release("h")
-		elif (actions[len(actions)-1] == "exit"):
-			subprocess.call([self.path + '/mail.sh'])
-			print "Commencing help"
-			keyboard.press(pynput.keyboard.enter)
-			keyboard.press("i")
-			keyboard.release(pynput.keyboard.enter)
-			keyboard.release("i")
-	elif (actions[len(actions)-2] == "internet"):
-		time.sleep(2)
-		if (actions[len(actions)-1] == "launch"):
-			print "Going to google"
-			subprocess.call([self.path + '/browser.sh'])
-			keyboard.type("www.google.com")
-			keyboard.press(Key.enter)
-			keyboard.release(Key.enter)
-		elif (actions[len(actions)-1] == "bookmarks"):
-			print "Bookmark menu opening"
-			subprocess.call([self.path + '/browser.sh'])
-			keyboard.press("s")
-			keyboard.release("s")
-		elif (actions[len(actions)-1] == "save"):
-			print "saving page"
-			subprocess.call([self.path + '/browser.sh'])
-			keyboard.press("d")
-			keyboard.release("d")
-		elif (actions[len(actions)-1] == "url"):
-			print "bringing up url prompt"
-			subprocess.call([self.path + '/browser.sh'])
-			keyboard.press("g")
-			keyboard.release("g")
-	elif (actions[len(actions)-2] == "music"):
-		time.sleep(2)
-		subprocess.call([self.path + '/player.sh'] + actions)
+        if (actions[len(actions)-2] == "email"):
+            time.sleep(2)
+            if (actions[len(actions)-1] == "quit"):
+                subprocess.call([self.path + '/mail.sh'])
+                print("Commencing quit")
+                keyboard.press("q")
+                keyboard.release("q")
+            elif (actions[len(actions)-1] == "save"):
+                    subprocess.call([self.path + '/mail.sh'])
+                    print("Commencing save")
+                    keyboard.press("s")
+                    keyboard.release("s")
+            elif (actions[len(actions)-1] == "delete"):
+                    subprocess.call([self.path + '/mail.sh'])
+                    print("Commencing delete")
+                    keyboard.press("d")
+                    keyboard.release("d")
+            elif (actions[len(actions)-1] == "mail"):
+                    subprocess.call([self.path + '/mail.sh'])
+                    print("Commencing mail")
+                    keyboard.press("m")
+                    keyboard.release("m")
+            elif (actions[len(actions)-1] == "undelete"):
+                    subprocess.call([self.path + '/mail.sh'])
+                    print("Commencing undelete")
+                    keyboard.press("u")
+                    keyboard.release("u")
+            elif (actions[len(actions)-1] == "reply"):
+                    subprocess.call([self.path + '/mail.sh'])
+                    print("Commencing reply")
+                    keyboard.press("r")
+                    keyboard.release("r")
+            elif (actions[len(actions)-1] == "group"):
+                    subprocess.call([self.path + '/mail.sh'])
+                    print("Commencing group")
+                    keyboard.press("g")
+                    keyboard.release("g")
+            elif (actions[len(actions)-1] == "help"):
+                    subprocess.call([self.path + '/mail.sh'])
+                    print("Commencing help")
+                    keyboard.press("h")
+                    keyboard.release("h")
+            elif (actions[len(actions)-1] == "exit"):
+                    subprocess.call([self.path + '/mail.sh'])
+                    print("Commencing help")
+                    keyboard.press(pynput.keyboard.enter)
+                    keyboard.press("i")
+                    keyboard.release(pynput.keyboard.enter)
+                    keyboard.release("i")
+            elif (actions[len(actions)-2] == "internet"):
+                time.sleep(2)
+                if (actions[len(actions)-1] == "launch"):
+                    print("Going to google")
+                    subprocess.call([self.path + '/browser.sh'])
+                    keyboard.type("www.google.com")
+                    keyboard.press(Key.enter)
+                    keyboard.release(Key.enter)
+                elif (actions[len(actions)-1] == "bookmarks"):
+                    print("Bookmark menu opening")
+                    subprocess.call([self.path + '/browser.sh'])
+                    keyboard.press("s")
+                    keyboard.release("s")
+                elif (actions[len(actions)-1] == "save"):
+                    print("saving page")
+                    subprocess.call([self.path + '/browser.sh'])
+                    keyboard.press("d")
+                    keyboard.release("d")
+                elif (actions[len(actions)-1] == "url"):
+                    print("bringing up url prompt")
+                    subprocess.call([self.path + '/browser.sh'])
+                    keyboard.press("g")
+                    keyboard.release("g")
+        elif (actions[len(actions)-2] == "music"):
+            time.sleep(2)
+            subprocess.call([self.path + '/player.sh'] + actions)
         elif (actions[len(actions)-2] == "video"):
-		time.sleep(2)
-                subprocess.call([self.path + '/video.sh'])
-		if (actions[len(actions)-1] == "open"):
-			print "Going to google"
-			keyboard.press(Key.ctrl)
-			keyboard.press("o")
-			keyboard.release(Key.ctrl)
-                        keyboard.release("o")
-		elif (actions[len(actions)-1] == "playpause"):
-			print "Bookmark menu opening"
-			keyboard.press(Key.space)
-			keyboard.release(Key.space)
-		elif (actions[len(actions)-1] == "stop"):
-			print "saving page"
-			keyboard.press("l")
-			keyboard.press("s")
-			keyboard.release("l")
-			keyboard.release("s")
-		elif (actions[len(actions)-1] == "prev"):
-			print "saving page"
-			keyboard.press("l")
-			keyboard.press("v")
-			keyboard.release("l")
-			keyboard.release("v")
-		elif (actions[len(actions)-1] == "next"):
-			print "saving page"
-			keyboard.press("l")
-			keyboard.press("x")
-			keyboard.release("l")
-			keyboard.release("x")
+            time.sleep(2)
+            subprocess.call([self.path + '/video.sh'])
+            if (actions[len(actions)-1] == "open"):
+                print("Going to google")
+                keyboard.press(Key.ctrl)
+                keyboard.press("o")
+                keyboard.release(Key.ctrl)
+                keyboard.release("o")
+            elif (actions[len(actions)-1] == "playpause"):
+                print("Bookmark menu opening")
+                keyboard.press(Key.space)
+                keyboard.release(Key.space)
+            elif (actions[len(actions)-1] == "stop"):
+                print("saving page")
+                keyboard.press("l")
+                keyboard.press("s")
+                keyboard.release("l")
+                keyboard.release("s")
+            elif (actions[len(actions)-1] == "prev"):
+                print("saving page")
+                keyboard.press("l")
+                keyboard.press("v")
+                keyboard.release("l")
+                keyboard.release("v")
+            elif (actions[len(actions)-1] == "next"):
+                print("saving page")
+                keyboard.press("l")
+                keyboard.press("x")
+                keyboard.release("l")
+                keyboard.release("x")
 	#else:
         #	self.destroy_all()
         self.show_top()
@@ -369,12 +369,12 @@ def checkIfProcessRunning(processName):
     
     #Iterate over the all the running process
     	for proc in psutil.process_iter():
-        	try:
+            try:
             # Check if process name contains the given name string.
-            		if processName.lower() in proc.name().lower():
-                		return True
-        	except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
-            		pass
+                if processName.lower() in proc.name().lower():
+                    return True
+            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            	pass
     	return False;
 
 def main():
