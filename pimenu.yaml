@@ -1,0 +1,330 @@
+# Menu-Setup.
+#
+# name and label are required for each item
+# color and icon are optional
+# only gifs (48x48) are supported
+#
+---
+  - 
+    name: "social"
+    label: "Social"
+    color: "#603cba"
+    icon: "thumbs.up"
+    items: 
+      - 
+        name : "email"
+        label: "Email"
+        icon : "email"
+        items:
+          -
+            name : "quit"
+            label: "Quit"
+            icon : "music"
+          - 
+            name : "save"
+            label: "Save"
+            icon : "music" 
+          -
+            name : "delete"
+            label: "Delete"
+            icon : "music"
+          -
+            name : "mail"
+            label: "Mail"
+            icon : "music"
+          -
+            name : "undelete"
+            label: "Undelete"
+            icon : "music"
+          -
+            name : "reply"
+            label: "Reply"
+            icon : "minus"
+          -
+            name : "group"
+            label: "Group"
+            icon : "music"  
+          -
+            name : "help"
+            label: "Help"
+            icon : "plus"
+          -
+            name : "return"
+            label: "Exit Mode"
+            icon : "plus"
+      -   
+        name : "internet"
+        label: "Internet"
+        icon : "globe.wire"
+        items:
+          -
+            name : "launch"
+            label: "Start Browser"
+            icon : "plus"
+          -
+            name : "bookmarks"
+            label: "Bookmarks"
+            icon : "plus"
+          -
+            name : "save"
+            label: "Save Page As File"
+            icon : "plus"
+          -
+            name : "url"
+            label: "Type In Url"
+            icon : "plus"
+      - 
+        name : "music"
+        label: "Music"
+        icon : "music"
+        items:
+          -
+            name : "play"
+            label: "Play"
+            icon : "music"
+          - 
+            name : "pause"
+            label: "Pause"
+            icon : "music" 
+          -
+            name : "previous"
+            label: "Previous Track"
+            icon : "music"
+          -
+            name : "repeat"
+            label: "Toggle Repeat"
+            icon : "music"
+          -
+            name : "next"
+            label: "Next Track"
+            icon : "music"
+          -
+            name : "voldown"
+            label: "Volume Down"
+            icon : "minus"
+          -
+            name : "shuffle"
+            label: "Shuffle"
+            icon : "music"  
+          -
+            name : "volup"
+            label: "Volume Up"
+            icon : "plus"
+      -
+        name : "video"
+        label: "Video"
+        icon : "monitor.play"
+        items:
+          -
+            name:  "launch"
+            label: "Launch"
+            icon : "plus"
+          -
+            name : "open"
+            label: "Open Video"
+            icon : "plus"
+          -
+            name : "playpause"
+            label: "Play/Pause"
+            icon : "plus"
+          -
+            name : "stop"
+            label: "Stop"
+            icon : "plus"
+          -
+            name : "prev"
+            label: "Previous"
+            icon : "plus"
+          -
+            name : "next"
+            label: "Next"
+            icon : "plus"
+      -
+        name : "sensact"
+        label: "SENSACT"
+        icon : "monitor.play"
+        items:
+          -
+            name : "tv"
+            label: "TV"
+            color: "#603cba"
+            icon : ""
+            items:
+              -
+                name : "power"
+                label: "ON/OF"
+                icon : ""
+              -
+                name : "channelup"
+                label: "ChannelUp"
+                icon : ""
+              -
+                name : "channeldown"
+                label: "Channeldown"
+                icon : "" 
+              -
+                name : "volumeup"
+                label: "VolumeUp"
+                icon : ""
+              -
+                name : "volumedown"
+                label: "Volumedown"
+                icon : ""
+          - 
+            name : "callbell"
+            label: "Call Bell"
+            icon : ""
+          -
+            name : "buzzer"
+            label: "Buzzer"
+            icon : ""
+  - 
+    name: "personal"
+    label: "Personal"
+    color: "#603cba"
+    icon: "man.walk"
+    items:
+      -
+        name : "insurance"
+        label: "Insurance"
+        icon : "shield"
+        items:
+          -
+            name : "life"
+            label: "Life"
+            icon : "heart"
+          -
+            name : "interest"
+            label: "Interest"
+            icon : "marvel.shield"
+          -
+            name : "liability"
+            label: "Liability"
+            icon : "shield.alert"
+          -
+            name : "accident"
+            label: "Accident"
+            icon : "ambulance"
+          -
+            name : "liability"
+            label: "Medical"
+            icon : "medical"
+          -
+            name : "social"
+            label: "Social"
+            icon : "share.open"
+          -
+            name : "furniture"
+            label: "Furniture"
+            icon : "home"
+      -
+        name : "salary"
+        label: "Salary"
+        icon : "money"
+      -
+        name : "clothes"
+        label: "Clothes"
+        icon : "clothes.tie"
+      -
+        name : "accessories"
+        label: "Accessories"
+        items:
+          -
+            name : "calculator"
+            label: "Calculator"
+            icon : "calculator"
+          -
+            name : "clock"
+            label: "Clock"
+            icon : "clock"
+          -
+            name : "internet"
+            label: "Search Engine"
+            icon : "globe.wire"  
+      -
+        name : "bill"
+        label: "Bill"
+        icon : "invoice"
+      -
+        name : "home"
+        label: "Home"
+        icon : "home"
+      -
+        name : "tax"
+        label: "Tax"
+        icon : "currency.dollar"
+      -
+        name : "bank"
+        label: "Bank"
+        icon : "money"
+      -
+        name : "miscellaneous"
+        label: "Miscellaneous"
+        icon : "cabinet.files.variant"
+  - 
+    name: "accessibility"
+    label: "Accessibility"
+    color: "#603cba"
+    icon: "group.add"
+    items: 
+      - 
+        name : "onboard"
+        label: "Onscreen Keyboard"
+        color: "#603cba"
+        icon : "input.keyboard"
+      - 
+        name : "eviacam"
+        label: "Webcam Mouse"
+        color: "#603cba"
+        icon : "webcam"
+      - 
+        name : "orca"
+        label: "Screen Reader"
+        color: "#603cba"
+        icon : "magnify.browse"
+      -
+        name : "Kmag"
+        label: "Screen Magnifier"
+        color: "#603cba"
+        icon : "fullscreen"
+      -
+        name : "Kmouse"
+        label: "Auto Mouse Clicker"
+        color: "#603cba"
+        icon : "hardware.mouse"
+  - 
+    name: "settings"
+    label: "Settings"
+    color: "#603cba"
+    icon: "list.gear"
+    items: 
+      - 
+        name : "nmtui"
+        label: "Network Setup"
+        color: "#603cba"
+        icon : "connection.wifi.variant"
+      - 
+        name : "audio"
+        label: "Audio Setup"
+        color: "#603cba"
+        icon : "speakerphone"
+      - 
+        name : "keyboardmouse"
+        label: "Keyboard and \nMouse Settings"
+        color: "#603cba"
+        icon : "input.keyboard"
+      -
+        name : "tools"
+        label: "System Tools"
+        color: "#603cba"
+        icon : "tools"
+  -
+    name: "placeholder"
+    label: "Placeholder"
+    color: "#603cba"
+    icon: "fish"
+  -
+    name: "exit"
+    label: "Exit"
+    color: "#008000"
+    icon: "xbox"

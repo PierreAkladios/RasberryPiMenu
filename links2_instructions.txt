@@ -1,0 +1,62 @@
+    Action 	Keystroke 	Comments:
+    Open/ Go to
+    url/filename 	g or G 	
+
+    Activates pop-up box where you can enter a filename or url.
+
+    Using the <Up_Arrow> key while the "Go to box" is active permits scrolling of this session's "Go to" history (i.e. all the urls/filenames you typed in).
+
+    Links will also automatically prepend any request with the protocol prefix (http://; file://; ftp://) according to the scheme explained in [Note 1].
+    Follow and Display current link 	<enter> or
+    <return> or
+    -->
+    <Right_Arrow> 	
+
+    Invokes a request for the current link's file to display. A left mouse button click does the same.
+
+    Please note that Links, in it's distributed form, will attempt to display any file request.
+
+    To prevent the undesirable display of files such as image files, see [Note 2].
+    Download link file 	d or D 	
+
+    Same as 'Save Link As' in some other browsers.
+
+    To specify a default download directory, add the following line to your ".links.cfg" file.
+
+      download_dir Downloads
+    where "Downloads" is an existing directory relative to your home directory.
+    Go back 	<--
+    <Left_Arrow> 	Reloads previously displayed document (if any).
+    Stop fetching 	<--
+    <Left_Arrow> 	To stop a file transfer, press this key once.
+    Reload/Refresh
+    current page 	^R 	Note: this is not a screen refresh, it just reloads the page from the server.
+
+
+    Action 	Keystroke 	Comments:
+    Previous link 	<Up_Arrow> 	
+
+    Jumps to previous link on the current screen, or to the bottom link of the previous screen if there are no intermediate links.
+
+    See [Note 3] on how Links navigates a document structured as columns with this arrow key.
+    Next link 	<Down_Arrow> 	
+
+    Jumps to next link on the current screen, or to the top link of the next screen if there are no intermediate links.
+
+    See [Note 3] on how Links navigates a document structured as columns with this arrow key.
+    Jump to "bottom of page" 	<End>
+    or ^E 	Jumps to the bottom of the page, i.e. past the bottom of the current screen, if the current screen is not at the bottom.
+    Jump to "top of page" 	<Home>
+    or ^A 	Jumps to the top of the page, i.e. past the top of the current screen, if current screen is not the first one.
+    Jump to "next screen" 	<Space_Bar>
+    or <Page_Down>
+    or ^F 	One screen forward (i.e. down). The <Down_Arrow> also does this, but ONLY if there are no intervening links.
+    Jump to "previous screen" 	b
+    or <Page_Up>
+    or ^B 	Back by one screen (i.e. up). The <Up_Arrow> also does this, but ONLY if there are no intervening links.
+    Scroll down 	<Delete>
+    or ^N 	Scrolls down two lines at a time. If any links are on the screen, the first one is active.
+    Scroll up 	<Insert>
+    or ^P 	Scrolls up two lines at a time. If any links are on the screen, the last one is active.
+    Scroll right 	] 	For those pages where content is off the right of the screen.
+    Scroll left 	[ 	Getting back to the left, having just scrolled to the right.
