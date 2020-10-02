@@ -1,23 +1,23 @@
 td, tr{
-    border: 100px transparent;
-    width: 700px;
-    height: 400px;
-    background-color:#293251;
+    border: 5px solid black;
+    width: 50vw;
+    height: 45vh;
+    background-color:#384d99;
 }
 
 table.center{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 body {text-align:center;
 }
 
 .photo{
-    width: 600px;
-    height: 450px;
+    width: 30vw;
+    height: 40vh;
 }
 body{
     background-color: #293251;
