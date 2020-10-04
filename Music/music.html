@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="music.css" type="text/css" rel="stylesheet">
+        <title>Music player</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
+        <link rel="stylesheet" type="text/css" href="music.css">
     </head>
+<body>
+      <div class="player">       
+        <!-- Define the section for displaying track buttons -->
+        <div class="buttons"> 
+          <div class="Previous" onclick="Previous()"> 
+            <i class="fa fa-step-backward" style="font-size:300px;"></i> 
+          </div> 
+          <div class="Play" onclick="Play()"> 
+            <i class="fa fa-play-circle" style="font-size:300px;"></i> 
+          </div>
+          <div class="Pause" onclick="Pause()"> 
+            <i class="fa fa-pause-circle" style="font-size:300px;"></i> 
+          </div>
+          <div class="Next" onclick="Next()"> 
+            <i class="fa fa-step-forward" style="font-size:300px;"></i> 
+          </div> 
+        </div> 
+      </div>
+        <script src="music.js"></script>
+    </body>
 </html>
