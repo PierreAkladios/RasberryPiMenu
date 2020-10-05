@@ -1,0 +1,20 @@
+body {
+    background-color:#293251;
+}
+.player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Play, .Pause, .Next, .Previous {
+    padding: 25px;
+    opacity: 0.8;
+}
