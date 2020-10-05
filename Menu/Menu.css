@@ -22,3 +22,6 @@ body {text-align:center;
 body{
     background-color: #293251;
 }
+.photo_email:active, .photo_music:active, .photo_meteo:active,.photo_reg:active,.photo_info:active,.photo_vid:active{
+    background-color: green;    
+}

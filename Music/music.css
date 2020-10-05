@@ -15,6 +15,12 @@ body {
 }
 
 .Play, .Pause, .Next, .Previous {
-    padding: 25px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 10vh;
     opacity: 0.8;
+    color: white;
+}
+.Play:active, .Pause:active, .Next:active, .Previous:active{
+    color: black;
 }
