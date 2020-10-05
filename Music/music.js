@@ -20,7 +20,7 @@ let liste_lec = [
 
 function loadTrack(track_index) {
     //Load new song
-    liste_lec.src = liste_lec[track_index].path;
+    curr_track.src = liste_lec[track_index].path;
     curr_track.load();
     curr_track.addEventListener("ended", Next);
 }
