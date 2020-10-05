@@ -14,7 +14,7 @@ let liste_lec = [
         path: "musicTest/waltz.mp3"
     },
     {
-        path: "Music/musicTest/Eiffel 65 - Blue (Da Ba Dee) [Gabry Ponte Ice Pop Mix] (Original Video with subtitles).mp3"
+        path:"musicTest/Eiffel 65 - Blue (Da Ba Dee) [Gabry Ponte Ice Pop Mix] (Original Video with subtitles).mp3"
     },
 ];
 
