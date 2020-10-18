@@ -1,8 +1,9 @@
 td, tr{
     border: 5px solid black;
-    width: 50vw;
+    width: 45vw;
     height: 45vh;
     background-color:#384d99;
+    overflow: hidden;
 }
 
 table.center{
@@ -12,16 +13,26 @@ table.center{
     margin-bottom: 1em;
 }
 
-body {text-align:center;
+body {
+    text-align:center;
+    background-color:rgb(163, 108, 5);
 }
 
 .photo{
-    width: 30vw;
-    height: 40vh;
+    width: fit-content;
+    height: fit-content;
 }
-body{
-    background-color: #293251;
+
+.photo_email:hover, .photo_music:hover, .photo_meteo:hover,.photo_reg:hover,.photo_info:hover,.photo_vid:hover{
+    background-color: #1d2952;    
 }
+
 .photo_email:active, .photo_music:active, .photo_meteo:active,.photo_reg:active,.photo_info:active,.photo_vid:active{
     background-color: green;    
+}
+
+td a{
+    display: block;
+    margin: -10em;
+    padding: 10em;
 }

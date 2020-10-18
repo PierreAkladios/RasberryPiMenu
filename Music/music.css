@@ -2,12 +2,18 @@ body {
     background-color:#293251;
 }
 .player {
-    height: 95vh;
-    display: flex;
+    background-color: rgb(163, 108, 5);
+    border-radius: 150px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5%;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
 }
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -17,10 +23,32 @@ body {
 .Play, .Pause, .Next, .Previous {
     padding-left: 5vw;
     padding-right: 5vw;
-    padding-top: 10vh;
     opacity: 0.8;
-    color: white;
+    color: #f2f2f2;
 }
+
+.Play:hover, .Pause:hover, .Next:hover, .Previous:hover{
+    color: rgb(65, 65, 65);
+    opacity: 1;
+}
+
 .Play:active, .Pause:active, .Next:active, .Previous:active{
     color: black;
+    opacity: 1;
 }
+
+.back_arrow {
+    background-color: rgb(194, 0, 0);
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 5px 5px black;
+}
+
+.back_arrow:active {
+    background-color: green;
+}
+.photo {
+    height: 200px;
+    width: 200px;
+}
+

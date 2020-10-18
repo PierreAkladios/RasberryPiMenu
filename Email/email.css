@@ -12,7 +12,10 @@ body {
     text-align: center;
     border-radius: 15px;
     height: 80vh;
+    box-shadow: 5px 5px black;
+    align-items: center;
 }
+
 .input {
     border:3px solid black;
     border-radius: 5px;
@@ -34,6 +37,23 @@ body {
     font-size:1.5em;
     
 }
+
+.back_arrow {
+    background-color: rgb(194, 0, 0);
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 5px 5px black;
+}
+
+.back_arrow:active {
+    background-color: green;
+}
+
+textarea {
+    width: 30vw;
+}
+
+
 
 
 
