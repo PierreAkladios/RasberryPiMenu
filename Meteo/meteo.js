@@ -85,4 +85,11 @@ tempElement.addEventListener("click", function(){
     }
 });
 
+window.addEventListener("keydown", checkKey, false);
+
+function checkKey(key) {
+    if (key.keyCode == "66") {
+        window.location.href = "../Menu/Menu.html"
+    }
+}
 

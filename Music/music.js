@@ -53,3 +53,33 @@ function Previous() {
 }
 
 loadTrack(track_index);
+
+window.addEventListener("keydown", checkKey, false);
+
+function checkKey(key) {
+    if (key.keyCode == "66") {
+        window.location.href = "../Menu/Menu.html"
+    }
+
+    else if (key.keyCode == "80"){
+        // 80 = P
+        Play()
+    
+    }
+
+    else if (key.keyCode == "83") {
+        // 83 = S
+        Pause()
+    }
+
+    else if(key.keyCode == "78") {
+        // 78 = N
+        Next()
+    }
+
+    else if (key.keyCode == "76") {
+        // 76 = L
+        Previous()
+    }
+    
+}

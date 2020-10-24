@@ -8,24 +8,26 @@
 <body>
     <div class="back_arrow">
       <a href="../Menu/Menu.html"><img class="photo" src="../back_arrow.png"></a>
-    </div>
-      <div class="player">       
+    </div>       
         <!-- Define the section for displaying track buttons -->
-        <div class="buttons"> 
-          <div class="Previous" onclick="Previous()"> 
-            <i class="fa fa-step-backward" style="font-size:300px;"></i> 
-          </div> 
-          <div class="Play" onclick="Play()"> 
-            <i class="fa fa-play-circle" style="font-size:300px;"></i> 
-          </div>
-          <div class="Pause" onclick="Pause()"> 
-            <i class="fa fa-pause-circle" style="font-size:300px;"></i> 
-          </div>
-          <div class="Next" onclick="Next()"> 
-            <i class="fa fa-step-forward" style="font-size:300px;"></i> 
-          </div> 
-        </div> 
-      </div>
+        <div class="buttons">
+          <table>
+            <tr>
+              <td><a class="Previous" href="#" onclick="Previous()">  
+                <i class="fa fa-step-backward"></i> 
+              </a></td>
+              <td><a class="Play" href="#" onclick="Play()">  
+                <i class="fa fa-play-circle"></i> 
+              </a></td>
+              <td><a href="#" onclick="Pause()" class="Pause"> 
+                <i class="fa fa-pause-circle"></i> 
+              </a></td>
+              <td><a class="Next" href="#" onclick="Next()">
+                <i class="fa fa-step-forward"></i> 
+              </a></td>
+          </tr>
+          </table>
+        </div>
         <script src="music.js"></script>
     </body>
 </html>

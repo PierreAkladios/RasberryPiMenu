@@ -17,3 +17,11 @@ function autoResize() {
     this.style.height = 'auto'; 
     this.style.height = this.scrollHeight + 'px'; 
 } 
+
+window.addEventListener("keydown", checkKey, false);
+
+function checkKey(key) {
+    if (key.keyCode == "66") {
+        window.location.href = "../Menu/Menu.html"
+    }
+}
