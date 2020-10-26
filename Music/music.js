@@ -58,11 +58,7 @@ window.addEventListener("keydown", checkKey, false);
 
 function checkKey(key) {
     if (key.keyCode == "66") {
-<<<<<<< HEAD
-        //retour a Menu
-=======
-        // 66 = B
->>>>>>> cf5d7cdfe531a3d1ac1dfd4ed9273b80e8492e30
+        //retour a Menu 66 = B
         window.location.href = "../Menu/Menu.html"
     }
 
