@@ -58,19 +58,21 @@ window.addEventListener("keydown", checkKey, false);
 
 function checkKey(key) {
     if (key.keyCode == "66") {
+        // 66 = B
         window.location.href = "../Menu/Menu.html"
     }
 
     else if (key.keyCode == "80"){
         // 80 = P
-        Play()
+        if (isPlaying == true){
+            Pause()
+        }
+        else {
+            Play()
+        }
     
     }
 
-    else if (key.keyCode == "83") {
-        // 83 = S
-        Pause()
-    }
 
     else if(key.keyCode == "78") {
         // 78 = N
