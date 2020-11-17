@@ -28,11 +28,13 @@ function loadTrack(track_index) {
 function Play() {
     curr_track.play();
     isPlaying = true;
+    document.getElementById("shorts").innerHTML = "SHORTCUTS : 'B' = BACK ; 'P' = PAUSE ; 'N' = NEXT ; 'L' = PREVIOUS";
 }
 
 function Pause() {
     curr_track.pause();
     isPlaying = false;
+    document.getElementById("shorts").innerHTML = "SHORTCUTS : 'B' = BACK ; 'P' = PLAY ; 'N' = NEXT ; 'L' = PREVIOUS";
 }
 
 function Next() {
@@ -69,6 +71,7 @@ function checkKey(key) {
         }
         else {
             Play()
+
         }
     
     }

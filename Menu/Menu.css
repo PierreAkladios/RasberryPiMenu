@@ -1,7 +1,13 @@
+header {
+    background-color: rgb(255, 255, 255);
+    border: 2px black solid;
+    padding: 1px;
+}
+
 td, tr{
     border: 5px solid black;
     width: 45vw;
-    height: 45vh;
+    height: 40vh;
     background-color:#384d99;
     overflow: hidden;
 }

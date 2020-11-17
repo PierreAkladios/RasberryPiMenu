@@ -4,20 +4,26 @@
         <link href="email.css" type="text/css" rel="stylesheet">
     </head>
     <body>
+        <header><p id="shorts">SHORTCUTS ENABLED : B = 'BACK' ; TAB = 'NAVIGATING'</p></header>
         <div class="back_arrow">
             <a href="../Menu/Menu.html"><img class="photo" src="../back_arrow.png"></a>
         </div>
 
         <div class="container">
         <form method="post" enctype="text/plain" id="emailtarget">
-            <label>EMAIL ADRESS</label><br>
-            <input class="input" type="text" id="email_adress"><br>
+            <label>EMAIL ADDRESS</label><br>
+            <input class="input" type="text" id="email_address" onfocus="chgfocus()" onblur="chgfocus()"><br>
+
+            <label>SUBJECT</label><br>
+            <input class="input" type="text" id="subject" onfocus="chgfocus()" onblur="chgfocus()"><br>
 
             <label>MESSAGE</label><br>
-            <textarea class="input" type="comment" id="message" required></textarea><br>
-            
-            <input onclick="copy()" type="submit" value="send" id="submit_button">
+            <textarea class="input" type="comment" id="message" required onfocus="chgfocus()" onblur="chgfocus()"></textarea><br>
+            <br>
+            <input onclick="copy()" type="submit" value="SEND" class="button" id="send">
         </form>
+        <br>
+        <button onclick="clear_input()" id = "clear" class="button">CLEAR</button>
         </div>
 
         <script src="email.js"></script>

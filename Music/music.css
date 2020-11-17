@@ -2,6 +2,14 @@ body {
     text-align:center;
     background-color:rgb(163, 108, 5);
 }
+
+header {
+    background-color: rgb(255,255,255);
+    border:2px black solid;
+    font-size: 50px;
+    padding: 10px;
+}
+
 table{
     position: relative;
     margin-top: 15vh;
@@ -17,7 +25,6 @@ table{
 .photo {
     position: relative;
     height: 15vh;
-    width: 7vw;
 }
 
 .back_arrow {
