@@ -38,16 +38,19 @@ header {
 .button {
     border-color: black;
     background-color: rgb(184, 184, 184);
-    width: 120px;
-    height: 40px;
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
 }
 
 #send {
-    border:3px rgb(16, 196, 0) solid;
+    border:4px rgb(16, 196, 0) solid;
+    font-weight: bolder;
 }
 
 #clear {
-    border:3px rgb(214, 3, 3) solid;
+    border:4px rgb(214, 3, 3) solid;
+    font-weight: bolder;
 
 }
 
@@ -63,6 +66,10 @@ header {
 #clear:active {
     background-color: red;
     font-weight: bolder;
+}
+
+#clear:focus , #send:focus {
+    background-color:rgb(85, 85, 85);
 }
 
 .back_arrow {
