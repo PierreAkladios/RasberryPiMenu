@@ -9,9 +9,11 @@ weather.temperature ={
     unit : "celcius"
 }
 const Kelvin = 273;
+
 //App key usage
 const Key = "56afb6c45f6f5ecf304ec26c26decf70";
 
+//Ask the browser for location of the user
 if("geolocation" in navigator){
     navigator.geolocation.getCurrentPosition(setPosition, showError);
 }else{
@@ -36,6 +38,8 @@ function getWeather(latitude, longitude){
     let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${Key}`;
     
     fetch(api)
+    //The data received provides informations about the country, a weather description, temperature value, etc. 
+    //Icons and information are matched with the informations given
         .then(function(response){
             let data = response.json();
             return data;
@@ -52,7 +56,7 @@ function getWeather(latitude, longitude){
             })
 }
 
-//C to F conversion
+//Celcius to Fahrenheit conversion
 function celciusToFahrenheit( temperature){
     return (temperature * 9/5)+32;
 }
@@ -68,8 +72,10 @@ function displayWeather(){
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }
 
-//When the user clicks on the temperature element
-tempElement.addEventListener("click", function(){
+//When the user clicks on the temperature element, changes the celcius to fahrenheits
+tempElement.addEventListener("click",chgtemp) 
+
+function chgtemp(){
     if(weather.temperature.value === undefined) return;
 
     if(weather.temperature.unit === "celcius"){
@@ -78,19 +84,26 @@ tempElement.addEventListener("click", function(){
         
         tempElement.innerHTML = `${fahrenheit}° <span>F</span>`;
         weather.temperature.unit = "fahrenheit";
+        document.getElementById("shortcuts").innerHTML = "SHORTCUTS : 'B' = BACK ; 'SPACEBAR' = to CELCIUS";
     
     }else{
         tempElement.innerHTML = `${weather.temperature.value}° <span>C</span>`;
         weather.temperature.unit = "celcius";
+        document.getElementById("shortcuts").innerHTML = "SHORTCUTS : 'B' = BACK ; 'SPACEBAR' = to FAHRENHEIT";
     }
-});
+};
 
 window.addEventListener("keydown", checkKey, false);
 
 function checkKey(key) {
     if (key.keyCode == "66") {
+        // 66 = 'b'
         //retourner au menu
         window.location.href = "../Menu/Menu.html"
+    }
+    else if (key.keyCode == "32") {
+        // 32 = "spacebar"
+        chgtemp()
     }
 }
 

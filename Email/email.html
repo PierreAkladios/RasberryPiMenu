@@ -5,12 +5,14 @@
     </head>
     <body>
         <header><p id="shorts">SHORTCUTS ENABLED : B = 'BACK' ; TAB = 'NAVIGATING'</p></header>
+
         <div class="back_arrow">
             <a href="../Menu/Menu.html"><img class="photo" src="../back_arrow.png"></a>
         </div>
 
         <div class="container">
         <form method="post" enctype="text/plain" id="emailtarget">
+        <!-- When the user clicks (or focus) inside an input or a textarea, it calls the chgfocus() function that sets the focus variable in email.js to true. Same thing when the user leaves the input or textarea, it is changed to false  -->
             <label>EMAIL ADDRESS</label><br>
             <input class="input" type="text" id="email_address" onfocus="chgfocus()" onblur="chgfocus()"><br>
 
