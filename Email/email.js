@@ -38,7 +38,7 @@ function chgfocus(){
 
     }else{
         focused = false
-        document.getElementById("shorts").innerHTML = "SHORTCUTS ENABLED : B = 'BACK' ; TAB = 'NAVIGATING'";
+        document.getElementById("shorts").innerHTML = "SHORTCUTS ENABLED : B = 'BACK' ; S = 'SEND'; C = 'Clear' ; TAB = 'NAVIGATING'";
     }
 }
 
@@ -60,6 +60,16 @@ function checkKey(key) {
         //On press of 'b' returns to main menu
         
         window.location.href = "../Menu/Menu.html"
+    }
+    else if (key.keyCode == "83" && focused == false){
+        // 83 = 'S'
+        document.getElementById("send").click()
+
+    }
+    else if (key.keyCode == "67" && focused==false){
+        // 67 = 'C'
+        document.getElementById("clear").click()
+        
     }
 }
 
