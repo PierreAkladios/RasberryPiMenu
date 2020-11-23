@@ -1,5 +1,5 @@
 body{
-    background-color: #293251;
+    background-color: rgb(163, 108, 5);
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 
 .container{
     width: 70vw;
-    background-color:rgb(163, 108, 5);
+    background-color:#293251;
     height:80vh;
     display: block;
     margin: 0 auto;
