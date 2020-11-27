@@ -1,3 +1,4 @@
+document.getElementById("shorts").innerHTML = "SHORTCUTS : 'B' = BACK ; 'P' = PLAY ; 'N' = NEXT ; 'L' = PREVIOUS"
 let track_index = 0;
 let isPlaying = false;
 let play_button = document.querySelector(".Play");
@@ -14,7 +15,157 @@ let liste_lec = [
         path: "musicTest/waltz.mp3"
     },
     {
-        path:"musicTest/Eiffel 65 - Blue (Da Ba Dee) [Gabry Ponte Ice Pop Mix] (Original Video with subtitles).mp3"
+        path: "musicTest/1 Arabic Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/1 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/10 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/11 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/12 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/13 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/14 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/15 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/16 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/17 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/18 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/19 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/2 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/20 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/21 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/22 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/4 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/3 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/5 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/6 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/7 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/8 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/9 Umm Kulthum.mp3"
+    },
+    {
+        path: "musicTest/Aadeet hayati.mp3"
+    },
+    {
+        path: "musicTest/Aadeet hayati.mp3"
+    },
+    {
+        path: "musicTest/Aghar Mn Nasmet.mp3"
+    },
+    {
+        path: "musicTest/akhadt.mp3"
+    },
+    {
+        path: "musicTest/Al-azoul Faye We Raye.mp3"
+    },
+    {
+        path: "musicTest/Ala aini elhagr.mp3"
+    },
+    {
+        path: "musicTest/Ala Balad El Mahbob.mp3"
+    },
+    {
+        path: "musicTest/Alf Lila W Lila.mp3"
+    },
+    {
+        path: "musicTest/Amal Hayati.mp3"
+    },
+    {
+        path: "musicTest/Amal Hayaty.mp3"
+    },
+    {
+        path: "musicTest/Amal Maher.mp3"
+    },
+    {
+        path: "musicTest/Amana Ayouh Al Quamar.mp3"
+    },
+    {
+        path: "musicTest/An El Oushaq.mp3"
+    },
+    {
+        path: "musicTest/Arab Idol.mp3"
+    },
+    {
+        path: "musicTest/Arouh Lmein.mp3"
+    },
+    {
+        path: "musicTest/Asoon Karamaty.mp3"
+    },
+    {
+        path: "musicTest/Ayoha El Raaeh.mp3"
+    },
+    {
+        path: "musicTest/ayyoha elraeh.mp3"
+    },
+    {
+        path: "musicTest/Bi ridhak ya khaliki.mp3"
+    },
+    {
+        path: "musicTest/Bi Ridhak Ya.mp3"
+    },
+    {
+        path: "musicTest/Daleely Ehtar.mp3"
+    },
+    {
+        path: "musicTest/Dalila.mp3"
+    },
+    {
+        path: "musicTest/Efrah Ya Qalby.mp3"
+    },
+    {
+        path: "musicTest/Ein el ochaq saalouni.mp3"
+    },
+    {
+        path: "musicTest/El Chekke Yehyi.mp3"
+    },
+    {
+        path: "musicTest/Enta Omry.mp3"
+    },
+    {
+        path: "musicTest/Fakarouny.mp3"
+    },
+    {
+        path: "musicTest/TheVoice.mp3"
     },
 ];
 
