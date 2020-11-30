@@ -2,7 +2,7 @@ header {
     background-color: rgb(255, 255, 255);
     border: 2px black solid;
     padding: 1px;
-    font-size: xx-large;
+    font-size: xx-large!important;
 }
 
 td, tr{

@@ -6,8 +6,11 @@ body {
 header {
     background-color: rgb(255,255,255);
     border:2px black solid;
-    font-size: xx-large;
     padding:30px;
+}
+
+#shorts{
+    font-size: xx-large!important;
 }
 
 table{
@@ -61,7 +64,7 @@ td a{
 }
 
 td i{
-    font-size: 30vh;
+    font-size: 30vh!important;
 }
 
 

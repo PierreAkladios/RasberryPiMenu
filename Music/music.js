@@ -1,4 +1,3 @@
-document.getElementById("shorts").innerHTML = "SHORTCUTS : 'B' = BACK ; 'P' = PLAY ; 'N' = NEXT ; 'L' = PREVIOUS"
 let track_index = 0;
 let isPlaying = false;
 let play_button = document.querySelector(".Play");
